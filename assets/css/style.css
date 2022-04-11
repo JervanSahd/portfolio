@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --first: rgba(68, 88, 119, 1);
+  --second: rgba(146, 204, 206, 1);
+  --third: rgba(49, 52, 61, 1);
+  --forth: rgba(28, 29, 33, 1);
+  --fifth: rgba(238, 238, 247, 1);
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var( --first);
+  background-color: var(--fifth);
+}
+
+header {
+  padding: 15px 0 0 0;
+  margin-top: .5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--third);
+}
+
+header h1 {
+  color: var(--third);
+  background-color: var(--second);
+  margin: .5% 0 .5% 0;
+  font-size: 60px;
+  line-height: 1;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding: 5px;
+  color: var(--second);
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.banner {
+  background-image: url("../images/code-monkey.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  padding: 2% 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.banner div {
+  flex: 0 0 90%;
+}
+  
+.banner h2 {
+  background-color: var(--second);
+  color: var(--third);
+  padding: 5px 10px;
+  display: inline;
+}
+
+.container {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* portfolio projects  */
+
+.proj-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project {
+  border: 5px solid var(--second);
+  background-color: var( --first);
+  color: var(--third);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  flex-wrap: wrap;
+  justify-content: left;
+  display: flex;
+  align-items: flex-end;
+  margin: 6px;
+  text-decoration: none;
+  font-size: 15px;
+  background-size: cover;
+  background-position: center;
+}
+
+.project div {
+  background-color: var(--second);
+  padding: 8px 10px;
+}
+
+.proj1 {
+  min-height: 400px;
+  flex-basis: 100%;
+  background-image: url("../images/project1.png");
+}
+
+.proj2 {
+  background-image: url("../images/solana.jpeg");
+}
+
+.proj3 {
+  background-image: url("../images/");
+
+}
+
+.proj4 {
+  background-image: url("../images/");
+
+}
+
+.proj5 {
+  background-image: url("../images/");
+}
+
+/* contact container */
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.address a {
+  color: var(--third);
+  padding: 5px;
+  font-size: 1.3rem;
+  font-style: normal;
+  display: inline-block;
+}
+
+/* A responsive layout that adapts to user's viewport  */
+
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .project,
+  .project:proj1{
+    flex-basis: 100%;
+  }
+
+  .project:proj1 {
+    min-height: 150px;
+  }
+
+  .banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
