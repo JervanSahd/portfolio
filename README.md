@@ -28,4 +28,4 @@ The following animation shows the web application's appearance and functionality
 ## Review
 
 https://github.com/JervanSahd/portfolio<br>
-https://github.com/JervanSahd/portfolio
+https://jervansahd.github.io/portfolio/
