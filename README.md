@@ -27,5 +27,5 @@ The following animation shows the web application's appearance and functionality
 
 ## Review
 
-https://github.com/JervanSahd/ss_-professional-portfolio<br>
-https://jervansahd.github.io/ss_-professional-portfolio/
+https://github.com/JervanSahd/portfolio<br>
+https://github.com/JervanSahd/portfolio
