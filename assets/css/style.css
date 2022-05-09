@@ -11,14 +11,15 @@
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: var( --first);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: var(--first);
   background-color: var(--fifth);
 }
 
 header {
   padding: 15px 0 0 0;
-  margin-top: .5%;
+  margin-top: 0.5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,7 +29,7 @@ header {
 header h1 {
   color: var(--third);
   background-color: var(--second);
-  margin: .5% 0 .5% 0;
+  margin: 0.5% 0 0.5% 0;
   font-size: 60px;
   line-height: 1;
 }
@@ -61,7 +62,7 @@ nav a {
 .banner div {
   flex: 0 0 90%;
 }
-  
+
 .banner h2 {
   background-color: var(--second);
   color: var(--third);
@@ -77,14 +78,14 @@ nav a {
 
 /* portfolio projects  */
 
-.proj-container{
+.proj-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .project {
   border: 5px solid var(--second);
-  background-color: var( --first);
+  background-color: var(--first);
   color: var(--third);
   min-height: 150px;
   max-height: 150px;
@@ -112,17 +113,15 @@ nav a {
 }
 
 .proj2 {
-  background-image: url("../images/solana.jpeg");
+  background-image: url("../images/ChalkBoardLogo.png");
 }
 
 .proj3 {
   background-image: url("../images/");
-
 }
 
 .proj4 {
   background-image: url("../images/");
-
 }
 
 .proj5 {
@@ -165,12 +164,11 @@ nav a {
   header nav {
     justify-content: center;
   }
-
 }
 
 @media screen and (max-width: 768px) {
   .project,
-  .project:proj1{
+  .project:proj1 {
     flex-basis: 100%;
   }
 
